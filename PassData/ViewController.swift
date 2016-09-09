@@ -22,6 +22,7 @@ class ViewController: UIViewController {
 override func viewDidLoad() {
         super.viewDidLoad()
 
+    
     myInt = 5
 }
 
@@ -29,6 +30,7 @@ override func viewDidLoad() {
     
    
 @IBAction func goButton(sender: AnyObject) {
+    
     let myVC = storyboard?.instantiateViewControllerWithIdentifier("SecondVC") as! SecondVC
     myVC.stringPassed = myLabel.text!
     myVC.intPassed = myInt
